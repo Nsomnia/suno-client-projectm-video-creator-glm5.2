@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "suno-creator",
+  "version": "0.1.0",
+  "description": "Suno API client + projectM visualizer + cinematic QML karaoke video creator (Windows cross-compile stub)",
+  "homepage": "https://github.com/projectM-visualizer",
+  "supports": "!android & !ios",
+  "dependencies": [
+    {
+      "name": "spdlog",
+      "version>=": "1.14.0"
+    },
+    {
+      "name": "nlohmann-json",
+      "version>=": "3.11.0"
+    },
+    {
+      "name": "qtbase",
+      "version>=": "6.8.0",
+      "features": ["gui", "widgets", "network"]
+    },
+    {
+      "name": "qtdeclarative",
+      "version>=": "6.8.0"
+    },
+    {
+      "name": "qtquick3d",
+      "version>=": "6.8.0"
+    },
+    {
+      "name": "qtmultimedia",
+      "version>=": "6.8.0"
+    }
+  ],
+  "builtin-baseline": "0000000000000000000000000000000000000000",
+  "comment": "builtin-baseline is a placeholder — set to a real vcpkg commit SHA when first cross-compiling for Windows. On Arch Linux the system Qt6/pacman packages are used instead (see RULES.md §6 and .agent/SKILLS.md)."
+}
